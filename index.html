@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah Khan | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquieries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Desktop Nav -->
+    <nav id="desktop-nav">
+        <div class="logo">AK</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hamburger Nav -->
+    <nav id="hamburger-nav">
+        <div class="logo">AK</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content reveal">
+            <div class="hero-image">
+                <img src="./Assets/me2.jpeg" alt="Abdullah Khan">
+            </div>
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Abdullah Khan</h1>
+                <h2 class="hero-title">
+                    <span id="typed-text"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-tagline">Building intelligent solutions at the intersection of software & AI</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="./Assets/Abdullah Khan_Resume_2024.docx" download class="btn btn-outline">Download CV</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/Doolah17" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/abdullah-khan-bb068121a" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:akhan.ak48@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span></span>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-header reveal">
+            <h2>About Me</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="about-container">
+            <div class="about-image reveal">
+                <img src="./Assets/me2.jpeg" alt="About Abdullah Khan">
+            </div>
+            <div class="about-text reveal">
+                <p>Analytical and detail-oriented professional with experience in <strong>software development</strong>, <strong>AI-driven solutions</strong>, and <strong>cloud-based platforms</strong>. Currently working as an IT Analyst at Canadian Heritage, building backend services and supporting AI workflows for the Artifacts Canada platform.</p>
+                <p>I thrive at the intersection of technology and problem-solving — whether it's designing REST APIs, automating workflows with Python, or deploying scalable solutions on Microsoft Azure. I hold a <strong>Government of Canada Reliability Status</strong> security clearance and am fluent in English, Urdu, and Hindi.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>3+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Companies</p>
+                    </div>
+                    <div class="stat">
+                        <h3>4</h3>
+                        <p>Certifications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="section-header reveal">
+            <h2>Professional Experience</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="timeline">
+            <!-- Experience 1 -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>IT Analyst – Software Solutions</h3>
+                        <span class="timeline-company">Canadian Heritage (PCH)</span>
+                        <span class="timeline-date">Nov 2025 – Present</span>
+                        <span class="timeline-type">Full-time · Hybrid</span>
+                    </div>
+                    <ul class="timeline-details">
+                        <li>Developed and consumed REST APIs using Swagger UI to manage sensitive files from classified museum datasets</li>
+                        <li>Supported AI-driven solutions for the Artifacts Canada platform, including data preparation and model training workflows</li>
+                        <li>Built backend services using Python, working with structured and semi-structured cultural heritage data</li>
+                        <li>Utilized Microsoft Azure services (Functions, VMs, Storage, Data Lake, Blob Storage) for scalable data processing</li>
+                        <li>Designed and maintained CI/CD pipelines using Azure DevOps and GitHub Actions</li>
+                    </ul>
+                    <div class="timeline-tags">
+                        <span>Python</span><span>Azure</span><span>REST APIs</span><span>CI/CD</span><span>AI/ML</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Field Technician – Drone Operations</h3>
+                        <span class="timeline-company">AirMatrix</span>
+                        <span class="timeline-date">Sep 2025 – Oct 2025</span>
+                        <span class="timeline-type">Full-time · On-site</span>
+                    </div>
+                    <ul class="timeline-details">
+                        <li>Operated and monitored drones in field environments, ensuring safe flight operations</li>
+                        <li>Utilized AirMatrix Libra software and radar systems to track drone flight paths</li>
+                        <li>Collected, analyzed, and reported drone performance metrics for R&D optimization</li>
+                        <li>Performed hardware maintenance and radar calibration</li>
+                    </ul>
+                    <div class="timeline-tags">
+                        <span>Drone Ops</span><span>Radar Systems</span><span>Data Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 3 -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Software Development Intern – Web Automation & AI</h3>
+                        <span class="timeline-company">AirMatrix</span>
+                        <span class="timeline-date">Jan 2025 – Sep 2025</span>
+                        <span class="timeline-type">Full-time · Remote</span>
+                    </div>
+                    <ul class="timeline-details">
+                        <li>Designed & built a Flask web app to automate bid scraping from CanadaBuys with real-time data extraction</li>
+                        <li>Integrated OpenAI's API to filter and categorize bids into priority levels based on AI & drone projects</li>
+                        <li>Developed Google Sheets API integration for automated bid data storage and tracking</li>
+                        <li>Implemented a Flask-based dashboard for scraping control and results visualization</li>
+                    </ul>
+                    <div class="timeline-tags">
+                        <span>Python</span><span>Flask</span><span>OpenAI API</span><span>Selenium</span><span>Automation</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 4 -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Taxpayer Service Agent</h3>
+                        <span class="timeline-company">Canada Revenue Agency</span>
+                        <span class="timeline-date">Jan 2023 – Sep 2023</span>
+                        <span class="timeline-type">Full-time · Remote</span>
+                    </div>
+                    <ul class="timeline-details">
+                        <li>Reviewed, analyzed, and researched taxpayer information through internal and external resources</li>
+                        <li>Identified and resolved taxpayer accounts requiring corrective actions</li>
+                        <li>Handled high volume of inbound calls with accuracy and professionalism</li>
+                    </ul>
+                    <div class="timeline-tags">
+                        <span>Customer Service</span><span>Data Analysis</span><span>Government</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 5 -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Quality Assurance Analyst</h3>
+                        <span class="timeline-company">Delphi Technology</span>
+                        <span class="timeline-date">Sep 2021 – Nov 2021</span>
+                        <span class="timeline-type">Internship · Remote</span>
+                    </div>
+                    <ul class="timeline-details">
+                        <li>Created test cases, conducted testing, and documented/tracked results and bugs</li>
+                        <li>Performed functional, integration, system, and compatibility testing</li>
+                        <li>Conducted test automation for web applications using Selenium in Java</li>
+                        <li>Created test scenarios for User Acceptance Testing (UAT)</li>
+                    </ul>
+                    <div class="timeline-tags">
+                        <span>QA</span><span>Selenium</span><span>Java</span><span>UAT</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 6 -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Bookkeeper / Associate</h3>
+                        <span class="timeline-company">Khalid Hasan Professional Corporation</span>
+                        <span class="timeline-date">Feb 2019 – Feb 2022</span>
+                        <span class="timeline-type">Part-time · Remote</span>
+                    </div>
+                    <ul class="timeline-details">
+                        <li>Reconciled complex bank and personal transactions using MS Excel</li>
+                        <li>Managed sensitive and confidential information with discretion</li>
+                        <li>Completed accurate and timely categorization of expenses</li>
+                    </ul>
+                    <div class="timeline-tags">
+                        <span>Excel</span><span>Bookkeeping</span><span>Finance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-header reveal">
+            <h2>Technical Skills</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skills-category reveal">
+                <div class="skills-category-header">
+                    <i class="fas fa-code"></i>
+                    <h3>Languages</h3>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item" data-level="90">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="85">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="80">
+                        <span class="skill-name">HTML/CSS</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="70">
+                        <span class="skill-name">TypeScript</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="65">
+                        <span class="skill-name">C</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="70">
+                        <span class="skill-name">SQL</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category reveal">
+                <div class="skills-category-header">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Frameworks & Tools</h3>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item" data-level="80">
+                        <span class="skill-name">React</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="85">
+                        <span class="skill-name">Flask</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="70">
+                        <span class="skill-name">Next.js</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="75">
+                        <span class="skill-name">Node.js</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="80">
+                        <span class="skill-name">Selenium</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="75">
+                        <span class="skill-name">Git / GitHub Actions</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category reveal">
+                <div class="skills-category-header">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud & DevOps</h3>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item" data-level="80">
+                        <span class="skill-name">Microsoft Azure</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="75">
+                        <span class="skill-name">Azure DevOps</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="70">
+                        <span class="skill-name">CI/CD Pipelines</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="65">
+                        <span class="skill-name">Linux</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="70">
+                        <span class="skill-name">REST APIs</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="75">
+                        <span class="skill-name">Power BI</span>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header reveal">
+            <h2>Featured Projects</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="projects-grid">
+            <!-- Featured Project -->
+            <div class="project-card featured reveal">
+                <div class="project-image">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            <span class="code-filename">combines.tsx</span>
+                        </div>
+                        <pre class="code-body"><code><span class="code-keyword">export default function</span> <span class="code-func">CombinePage</span>() {
+  <span class="code-keyword">const</span> [athletes, setAthletes] = <span class="code-func">useState</span>([]);
+  <span class="code-keyword">const</span> [leaderboard, setLeaderboard] = <span class="code-func">useState</span>([]);
+
+  <span class="code-keyword">async function</span> <span class="code-func">fetchResults</span>() {
+    <span class="code-keyword">const</span> res = <span class="code-keyword">await</span> <span class="code-func">fetch</span>(<span class="code-string">'/api/drills'</span>);
+    <span class="code-keyword">const</span> data = <span class="code-keyword">await</span> res.<span class="code-func">json</span>();
+    <span class="code-func">setLeaderboard</span>(data.rankings);
+  }
+
+  <span class="code-keyword">return</span> &lt;<span class="code-tag">Dashboard</span> <span class="code-attr">athletes</span>={athletes} /&gt;
+}<span class="typing-cursor">|</span></code></pre>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="https://j2nxepic.com" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-featured-badge">Featured</div>
+                    <h3>J2N x EPIC — Athlete Combines Platform</h3>
+                    <p>A full-stack athlete performance analytics and competitive combines platform. Features event registration, real-time countdown timers, leaderboard rankings, and data-driven performance insights across standardized drills (40-yard dash, shuttle, vertical jump, and more).</p>
+                    <div class="project-tags">
+                        <span>Full Stack</span><span>Analytics</span><span>Web App</span><span>Responsive</span>
+                    </div>
+                    <a href="https://j2nxepic.com" target="_blank" class="project-live-link">Visit Live Site <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            <span class="code-filename">scraper.py</span>
+                        </div>
+                        <pre class="code-body"><code><span class="code-keyword">from</span> flask <span class="code-keyword">import</span> Flask
+<span class="code-keyword">from</span> openai <span class="code-keyword">import</span> OpenAI
+
+app = <span class="code-func">Flask</span>(__name__)
+client = <span class="code-func">OpenAI</span>()
+
+<span class="code-keyword">def</span> <span class="code-func">categorize_bid</span>(bid):
+    res = client.chat.<span class="code-func">create</span>(
+      model=<span class="code-string">"gpt-4"</span>,
+      messages=[{<span class="code-string">"role"</span>: <span class="code-string">"user"</span>,
+        <span class="code-string">"content"</span>: bid}]
+    )
+    <span class="code-keyword">return</span> res.choices[0]<span class="typing-cursor">|</span></code></pre>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>AI Bid Scraper</h3>
+                    <p>Flask web app that automates bid scraping from CanadaBuys with OpenAI-powered priority categorization and Google Sheets integration.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Flask</span><span>OpenAI</span><span>Selenium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            <span class="code-filename">pipeline.py</span>
+                        </div>
+                        <pre class="code-body"><code><span class="code-keyword">from</span> azure.storage.blob <span class="code-keyword">import</span> BlobClient
+<span class="code-keyword">from</span> azure.functions <span class="code-keyword">import</span> func
+
+<span class="code-keyword">def</span> <span class="code-func">process_artifact</span>(req):
+    blob = BlobClient.<span class="code-func">from_url</span>(
+      <span class="code-string">"https://artifacts.blob"</span>
+    )
+    data = blob.<span class="code-func">download</span>()
+    model.<span class="code-func">predict</span>(data)
+    <span class="code-keyword">return</span> func.<span class="code-func">HttpResponse</span>(
+      <span class="code-string">"Processed"</span>, 200
+    )<span class="typing-cursor">|</span></code></pre>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Artifacts Canada Platform</h3>
+                    <p>AI-driven backend services for managing and processing cultural heritage data with Azure cloud infrastructure.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Azure</span><span>REST API</span><span>AI/ML</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education">
+        <div class="section-header reveal">
+            <h2>Education & Certifications</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="education-grid">
+            <div class="education-column">
+                <h3 class="education-subtitle reveal"><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="education-card reveal">
+                    <div class="education-icon"><i class="fas fa-university"></i></div>
+                    <div class="education-info">
+                        <h4>Computer Programming Diploma</h4>
+                        <p class="education-school">Algonquin College</p>
+                        <p class="education-date">Graduated: Aug 2025</p>
+                    </div>
+                </div>
+                <div class="education-card reveal">
+                    <div class="education-icon"><i class="fas fa-school"></i></div>
+                    <div class="education-info">
+                        <h4>Ontario Secondary School Diploma</h4>
+                        <p class="education-school">West Carleton Secondary School</p>
+                        <p class="education-date">2014 – 2018</p>
+                    </div>
+                </div>
+            </div>
+            <div class="education-column">
+                <h3 class="education-subtitle reveal"><i class="fas fa-certificate"></i> Certifications</h3>
+                <div class="education-card reveal">
+                    <div class="education-icon"><i class="fas fa-plane"></i></div>
+                    <div class="education-info">
+                        <h4>Advanced Operations Pilot Certificate</h4>
+                        <p class="education-school">Transport Canada</p>
+                        <p class="education-date">Sep 2025</p>
+                    </div>
+                </div>
+                <div class="education-card reveal">
+                    <div class="education-icon"><i class="fas fa-chart-bar"></i></div>
+                    <div class="education-info">
+                        <h4>BI Dashboards with Power BI</h4>
+                        <p class="education-school">Codecademy</p>
+                        <p class="education-date">May 2025</p>
+                    </div>
+                </div>
+                <div class="education-card reveal">
+                    <div class="education-icon"><i class="fas fa-bug"></i></div>
+                    <div class="education-info">
+                        <h4>Software Quality Assurance Certificate</h4>
+                        <p class="education-school">Techno Canada</p>
+                        <p class="education-date">Sep 2021</p>
+                    </div>
+                </div>
+                <div class="education-card reveal">
+                    <div class="education-icon"><i class="fas fa-users"></i></div>
+                    <div class="education-info">
+                        <h4>Public Relations & Customer Management</h4>
+                        <p class="education-school">Artech Accelerate</p>
+                        <p class="education-date">Jul 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-header reveal">
+            <h2>Get In Touch</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="contact-container reveal">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:akhan.ak48@gmail.com">akhan.ak48@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <a href="tel:6132556997">613-255-6997</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Kanata, ON, Canada</p>
+                    </div>
+                </div>
+            </div>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Abdullah Khan</div>
+            <p>&copy; 2026 Abdullah Khan. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/Doolah17" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abdullah-khan-bb068121a" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:akhan.ak48@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot -->
+    <div id="chatbot-toggle" aria-label="Open AI Assistant">
+        <i class="fas fa-robot"></i>
+    </div>
+    <div id="chatbot">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fas fa-robot"></i>
+                <span>AI Assistant</span>
+            </div>
+            <button id="chatbot-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div id="chatbot-messages">
+            <div class="chat-message bot">
+                <p>Hi! I'm Abdullah's AI assistant. Ask me anything about his skills, experience, or projects!</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-input" placeholder="Ask about Abdullah..." autocomplete="off">
+            <button id="chatbot-send"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
